@@ -3,16 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\models\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\models\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\migrations\\20240821133439_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\migrations\\20240821133439_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\models\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\models\\agent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\models\\agentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\models\\agentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\models\\targetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\models\\targetmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\models\\missionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\models\\missionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\services\\agentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\dtomodels\\generaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\dtomodels\\generaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\dtomodels\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\dtomodels\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\dtomodels\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\dtomodels\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\services\\iagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\services\\iagentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|c:\\users\\codco\\desktop\\agents\\rest\\mosadrest\\mosadrest\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75E04FB8-0F93-4CD1-9AB7-56F42A52F1E6}|MosadRest\\MosadRest.csproj|solutionrelative:mosadrest\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +58,156 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AgentDto.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\DtoModels\\AgentDto.cs",
+              "RelativeDocumentMoniker": "MosadRest\\DtoModels\\AgentDto.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\DtoModels\\AgentDto.cs",
+              "RelativeToolTip": "MosadRest\\DtoModels\\AgentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T14:06:33.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GeneralDto.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\DtoModels\\GeneralDto.cs",
+              "RelativeDocumentMoniker": "MosadRest\\DtoModels\\GeneralDto.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\DtoModels\\GeneralDto.cs",
+              "RelativeToolTip": "MosadRest\\DtoModels\\GeneralDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T14:01:20.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TargetDto.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\DtoModels\\TargetDto.cs",
+              "RelativeDocumentMoniker": "MosadRest\\DtoModels\\TargetDto.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\DtoModels\\TargetDto.cs",
+              "RelativeToolTip": "MosadRest\\DtoModels\\TargetDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T13:53:16.029Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Target.cs",
-              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\Target.cs",
-              "RelativeDocumentMoniker": "MosadRest\\Models\\Target.cs",
-              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\Target.cs",
-              "RelativeToolTip": "MosadRest\\Models\\Target.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
+              "Title": "20240821133439_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Migrations\\20240821133439_InitialCreate.cs",
+              "RelativeDocumentMoniker": "MosadRest\\Migrations\\20240821133439_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Migrations\\20240821133439_InitialCreate.cs",
+              "RelativeToolTip": "MosadRest\\Migrations\\20240821133439_InitialCreate.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAgwGwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T13:34:39.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AgentService.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Services\\AgentService.cs",
+              "RelativeDocumentMoniker": "MosadRest\\Services\\AgentService.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Services\\AgentService.cs",
+              "RelativeToolTip": "MosadRest\\Services\\AgentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T13:06:34.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAgentService.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Services\\IAgentService.cs",
+              "RelativeDocumentMoniker": "MosadRest\\Services\\IAgentService.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Services\\IAgentService.cs",
+              "RelativeToolTip": "MosadRest\\Services\\IAgentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T13:05:26.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "MosadRest\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\WeatherForecast.cs",
+              "RelativeToolTip": "MosadRest\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T13:00:34.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Program.cs",
+              "RelativeDocumentMoniker": "MosadRest\\Program.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Program.cs",
+              "RelativeToolTip": "MosadRest\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T13:00:32.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MosadRest\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MosadRest\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T12:57:22.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MissionModel.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\MissionModel.cs",
+              "RelativeDocumentMoniker": "MosadRest\\Models\\MissionModel.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\MissionModel.cs",
+              "RelativeToolTip": "MosadRest\\Models\\MissionModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T11:45:07.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TargetModel.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\TargetModel.cs",
+              "RelativeDocumentMoniker": "MosadRest\\Models\\TargetModel.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\TargetModel.cs",
+              "RelativeToolTip": "MosadRest\\Models\\TargetModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T11:16:50.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Agent.cs",
-              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\Agent.cs",
-              "RelativeDocumentMoniker": "MosadRest\\Models\\Agent.cs",
-              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\Agent.cs",
-              "RelativeToolTip": "MosadRest\\Models\\Agent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "AgentModel.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\AgentModel.cs",
+              "RelativeDocumentMoniker": "MosadRest\\Models\\AgentModel.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Models\\AgentModel.cs",
+              "RelativeToolTip": "MosadRest\\Models\\AgentModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T08:21:09.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "MosadRest\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\Rest\\MosadRest\\MosadRest\\Properties\\launchSettings.json",
-              "RelativeToolTip": "MosadRest\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-21T08:20:03.626Z",
               "EditorCaption": ""
             }
           ]
