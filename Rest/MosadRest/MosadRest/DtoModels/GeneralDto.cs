@@ -11,4 +11,9 @@
     {
         public string direction { get; set; }
     }
+    public class ResIdDto
+    {
+        public int Id { get; set; }
+    }
 }
+

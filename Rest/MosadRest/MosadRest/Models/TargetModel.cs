@@ -11,15 +11,15 @@ namespace MosadRest.Models
         [Required]
         public required string Position { get; set; }
         [AllowNull]
-        public string Photo_url { get; set; }
+        public string PhotoUrl { get; set; }
         [Required]
-        public required int X_Waypoint { get; set; } = 201;
+        public int XWaypoint { get; set; } = 201;
         [Required]
-        public required int Y_Waypoint { get; set; } = 201;
-        public required TargetStstus Ststus  { get; set; } = TargetStstus.live;
+        public int YWaypoint { get; set; } = 201;
+        public TargetStatus Status  { get; set; } = TargetStatus.live;
         public List<MissionModel> Missions { get; set; } = [];
-    }
-    public enum TargetStstus
+
+    public enum TargetStatus
     {
         live,
         dead

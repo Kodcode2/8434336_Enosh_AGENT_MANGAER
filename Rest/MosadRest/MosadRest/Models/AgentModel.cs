@@ -6,20 +6,20 @@ namespace MosadRest.Models
     {
         public int Id { get; set; }
         [Required]
-        public required string  NicName { get; set; }
+        public required string  NickName { get; set; }
         [Required]
-        public required string Photo_url { get; set; }
+        public required string PhotoUrl { get; set; }
         [Required]
-        public required int  X_Waypoint { get; set; } = 201;
+        public  int  XWaypoint { get; set; } = 201;
         [Required]
-        public required int  Y_Waypoint { get; set; } = 201;
+        public  int  YWaypoint { get; set; } = 201;
         [Required]
-        public required AgentStstus Ststus { get; set; } = AgentStstus.InActive;
+        public  AgentStatus Status { get; set; } = AgentStatus.InActive;
         public List<MissionModel> Missions { get; set; } = [];
 
 
     }
-    public enum AgentStstus
+    public enum AgentStatus
     {
         InActive, 
         Active

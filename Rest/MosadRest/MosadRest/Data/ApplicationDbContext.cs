@@ -11,15 +11,30 @@ namespace MosadRest.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<AgentModel>()
+                .Property(a => a.Status)
+                .HasConversion<string>()
+                .IsRequired();
+
+            modelBuilder.Entity<TargetModel>()
+                .Property(t => t.Status)
+                .HasConversion<string>()
+                .IsRequired();
+
+            modelBuilder.Entity<MissionModel>()
+                .Property(a => a.MissionStatus)
+                .HasConversion<string>()
+                .IsRequired();
+
             modelBuilder.Entity<MissionModel>()
                 .HasOne(m => m.Agent)
-                .WithMany()
+                .WithMany(a => a.Missions)
                 .HasForeignKey(m => m.AgentId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<MissionModel>()
                 .HasOne(m => m.Target)
-                .WithMany()
+                .WithMany(a => a.Missions)
                 .HasForeignKey(m => m.TargetId)
                 .OnDelete(DeleteBehavior.Restrict);
 

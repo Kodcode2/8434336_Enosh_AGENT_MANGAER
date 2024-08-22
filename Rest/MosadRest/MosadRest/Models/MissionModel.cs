@@ -15,14 +15,15 @@ namespace MosadRest.Models
         public TargetModel Target { get; set; }
         [Required]
         public required float TimeLeft { get; set; }
-        [AllowNull]
-        public float TotalExecutionTime { get; set; }
+        public float? TotalExecutionTime { get; set; }
         [Required]
-        public required MissionStstus MissionStstus { get; set; } = MissionStstus.offer;
+        public required MissionStatus MissionStatus { get; set; } = MissionStatus.offer;
+        public DateTime _starTtime { get; set; }
     }
+}
 
 }
-public enum MissionStstus
+public enum MissionStatus
 {
     offer,
     team,
