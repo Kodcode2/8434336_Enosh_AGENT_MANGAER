@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -16,11 +17,11 @@ namespace MosadRest.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NicName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Photo_url = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    X_Waypoint = table.Column<int>(type: "int", nullable: false),
-                    Y_Waypoint = table.Column<int>(type: "int", nullable: false),
-                    Ststus = table.Column<int>(type: "int", nullable: false)
+                    NickName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    XWaypoint = table.Column<int>(type: "int", nullable: false),
+                    YWaypoint = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -35,10 +36,10 @@ namespace MosadRest.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Position = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Photo_url = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    X_Waypoint = table.Column<int>(type: "int", nullable: false),
-                    Y_Waypoint = table.Column<int>(type: "int", nullable: false),
-                    Ststus = table.Column<int>(type: "int", nullable: false)
+                    PhotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    XWaypoint = table.Column<int>(type: "int", nullable: false),
+                    YWaypoint = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -54,10 +55,9 @@ namespace MosadRest.Migrations
                     AgentId = table.Column<int>(type: "int", nullable: false),
                     TargetId = table.Column<int>(type: "int", nullable: false),
                     TimeLeft = table.Column<float>(type: "real", nullable: false),
-                    TotalExecutionTime = table.Column<float>(type: "real", nullable: false),
-                    MissionStstus = table.Column<int>(type: "int", nullable: false),
-                    AgentModelId = table.Column<int>(type: "int", nullable: true),
-                    TargetModelId = table.Column<int>(type: "int", nullable: true)
+                    TotalExecutionTime = table.Column<float>(type: "real", nullable: true),
+                    MissionStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    _starTtime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -69,21 +69,11 @@ namespace MosadRest.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Missions_Agents_AgentModelId",
-                        column: x => x.AgentModelId,
-                        principalTable: "Agents",
-                        principalColumn: "Id");
-                    table.ForeignKey(
                         name: "FK_Missions_Targets_TargetId",
                         column: x => x.TargetId,
                         principalTable: "Targets",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Missions_Targets_TargetModelId",
-                        column: x => x.TargetModelId,
-                        principalTable: "Targets",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
@@ -92,19 +82,9 @@ namespace MosadRest.Migrations
                 column: "AgentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Missions_AgentModelId",
-                table: "Missions",
-                column: "AgentModelId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Missions_TargetId",
                 table: "Missions",
                 column: "TargetId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Missions_TargetModelId",
-                table: "Missions",
-                column: "TargetModelId");
         }
 
         /// <inheritdoc />

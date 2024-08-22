@@ -10,9 +10,9 @@ namespace MosadRest.Models
         [Required]
         public required string PhotoUrl { get; set; }
         [Required]
-        public  int  XWaypoint { get; set; } = 201;
+        public  int  XWaypoint { get; set; } = -201;
         [Required]
-        public  int  YWaypoint { get; set; } = 201;
+        public  int  YWaypoint { get; set; } = -201;
         [Required]
         public  AgentStatus Status { get; set; } = AgentStatus.InActive;
         public List<MissionModel> Missions { get; set; } = [];

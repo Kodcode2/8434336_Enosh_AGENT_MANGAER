@@ -22,7 +22,7 @@ namespace MosadRest.Models
     }
 }
 
-}
+
 public enum MissionStatus
 {
     offer,

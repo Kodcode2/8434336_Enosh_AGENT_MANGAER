@@ -22,7 +22,8 @@ namespace MosadRest
                     builder.Configuration.GetConnectionString("DefaulCnnetion")
                     )
                 );
-            //builder.Services.AddScoped<IAgentService, AgentService>();
+            builder.Services.AddScoped<IAgentService, AgentService>();
+            builder.Services.AddScoped<ITargetService, TargetService>();
             builder.Services.AddHttpClient();
 
             var app = builder.Build();

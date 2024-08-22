@@ -12,7 +12,7 @@ using MosadRest.Data;
 namespace MosadRest.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240821133439_InitialCreate")]
+    [Migration("20240822141938_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -33,21 +33,22 @@ namespace MosadRest.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("NicName")
+                    b.Property<string>("NickName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Photo_url")
+                    b.Property<string>("PhotoUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Ststus")
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("XWaypoint")
                         .HasColumnType("int");
 
-                    b.Property<int>("X_Waypoint")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Y_Waypoint")
+                    b.Property<int>("YWaypoint")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -66,33 +67,27 @@ namespace MosadRest.Migrations
                     b.Property<int>("AgentId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("AgentModelId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("MissionStstus")
-                        .HasColumnType("int");
+                    b.Property<string>("MissionStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TargetId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TargetModelId")
                         .HasColumnType("int");
 
                     b.Property<float>("TimeLeft")
                         .HasColumnType("real");
 
-                    b.Property<float>("TotalExecutionTime")
+                    b.Property<float?>("TotalExecutionTime")
                         .HasColumnType("real");
+
+                    b.Property<DateTime>("_starTtime")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AgentId");
 
-                    b.HasIndex("AgentModelId");
-
                     b.HasIndex("TargetId");
-
-                    b.HasIndex("TargetModelId");
 
                     b.ToTable("Missions");
                 });
@@ -109,7 +104,7 @@ namespace MosadRest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Photo_url")
+                    b.Property<string>("PhotoUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -117,13 +112,14 @@ namespace MosadRest.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Ststus")
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("XWaypoint")
                         .HasColumnType("int");
 
-                    b.Property<int>("X_Waypoint")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Y_Waypoint")
+                    b.Property<int>("YWaypoint")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -134,24 +130,16 @@ namespace MosadRest.Migrations
             modelBuilder.Entity("MosadRest.Models.MissionModel", b =>
                 {
                     b.HasOne("MosadRest.Models.AgentModel", "Agent")
-                        .WithMany()
+                        .WithMany("Missions")
                         .HasForeignKey("AgentId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("MosadRest.Models.AgentModel", null)
-                        .WithMany("Missions")
-                        .HasForeignKey("AgentModelId");
-
                     b.HasOne("MosadRest.Models.TargetModel", "Target")
-                        .WithMany()
+                        .WithMany("Missions")
                         .HasForeignKey("TargetId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
-
-                    b.HasOne("MosadRest.Models.TargetModel", null)
-                        .WithMany("Missions")
-                        .HasForeignKey("TargetModelId");
 
                     b.Navigation("Agent");
 
