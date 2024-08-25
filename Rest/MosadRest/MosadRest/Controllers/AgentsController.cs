@@ -6,9 +6,9 @@ using MosadRest.Services;
 
 namespace MosadRest.Controllers
 {
-    [Route("[controller]")]
+    [Route("/[controller]")]
     [ApiController]
-    public class AgentsController(IAgentService agentService) : ControllerBase
+    public class AgentsController(IAgentService agentService,IMissionService missionService ) : ControllerBase
     {
 
         [HttpPost]
@@ -30,7 +30,9 @@ namespace MosadRest.Controllers
                 return BadRequest("The agent is active");
             try
             {
-                return await agentService.PinAgentAsync(id, locationDto) ? Ok() : BadRequest("didint work");
+               await agentService.PinAgentAsync(agent, locationDto);
+                await missionService.ChkAndCreateMissinsForAgentAsync(agent);
+                return Ok();
             }
             catch (Exception ex)
             {
@@ -45,7 +47,10 @@ namespace MosadRest.Controllers
                 return BadRequest("The agent is active");
             try
             {
-                return Ok(await agentService.MoveAgentAsync(agent, directionDto));
+                await agentService.MoveAgentAsync(agent, directionDto);
+                await missionService.ConfromandEditMussunsForAgentAsinc(agent);
+                await missionService.ChkAndCreateMissinsForAgentAsync(agent);
+                return Ok();
             }
             catch (Exception ex)
             {

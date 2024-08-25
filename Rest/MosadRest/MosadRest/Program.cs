@@ -24,6 +24,7 @@ namespace MosadRest
                 );
             builder.Services.AddScoped<IAgentService, AgentService>();
             builder.Services.AddScoped<ITargetService, TargetService>();
+            builder.Services.AddScoped<IMissionService, MissionService>();
             builder.Services.AddHttpClient();
 
             var app = builder.Build();

@@ -5,9 +5,11 @@ namespace MosadRest.Services
 {
     public interface ITargetService
     {
-        public Task<ResIdDto?> CreateTarget(TargetDto targetDto);
+        public Task<ResIdDto?> CreateTargetAsync(TargetDto targetDto);
         public Task<List<TargetModel>?> GetAllTargets();
-        public Task<bool> PinTarget(int id, locationDto location);
-        public Task<bool> MoveTarget(int id, DirectionDto directionDto);
+        public Task PinTargetAsync(int id, locationDto location);
+        public Task MoveTargetAsync(int id, DirectionDto directionDto);
+        public Task<TargetModel> GetTargetById(int id);
+        
     }
 }

@@ -18,14 +18,15 @@ namespace MosadRest.Models
         public int YWaypoint { get; set; } = -201;
         public TargetStatus Status { get; set; } = TargetStatus.live;
         public List<MissionModel> Missions { get; set; } = [];
+        public bool IsHunted { get; set; } = false;
 
+    }
         public enum TargetStatus
         {
             live,
             dead
         }
 
-    }
 }
 
 

@@ -71,13 +71,13 @@ namespace MosadRest.Migrations
                     b.Property<int>("TargetId")
                         .HasColumnType("int");
 
-                    b.Property<float>("TimeLeft")
-                        .HasColumnType("real");
+                    b.Property<double>("TimeLeft")
+                        .HasColumnType("float");
 
-                    b.Property<float?>("TotalExecutionTime")
-                        .HasColumnType("real");
+                    b.Property<double?>("TotalExecutionTime")
+                        .HasColumnType("float");
 
-                    b.Property<DateTime>("_starTtime")
+                    b.Property<DateTime>("_StartTime")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -96,6 +96,9 @@ namespace MosadRest.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("IsHunted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()

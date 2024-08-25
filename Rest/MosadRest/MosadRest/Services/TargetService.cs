@@ -2,6 +2,7 @@
 using MosadRest.Data;
 using MosadRest.DtoModels;
 using MosadRest.Models;
+using MosadRest.Utils;
 using System.Reflection;
 
 
@@ -9,13 +10,13 @@ namespace MosadRest.Services
 {
     public class TargetService(ApplicationDbContext _DbContext) : ITargetService
     {
-        public async Task<ResIdDto?> CreateTarget(TargetDto targetDto)
+        public async Task<ResIdDto?> CreateTargetAsync(TargetDto targetDto)
         {
             TargetModel newTarget = new()
             {
                 Name = targetDto.name,
                 Position = targetDto.position,
-                PhotoUrl = targetDto.photo_url
+                PhotoUrl = targetDto.photoUrl
             };
             await _DbContext.AddAsync(newTarget);
             await _DbContext.SaveChangesAsync();
@@ -26,65 +27,54 @@ namespace MosadRest.Services
         }
         public async Task<List<TargetModel>> GetAllTargets()
         {
-            return _DbContext.Targets.ToList() ?? new();
+            var a = await _DbContext.Targets.ToListAsync() ?? new();
+
+            return await _DbContext.Targets.ToListAsync() ?? new();
         }
-        public async Task<bool> PinTarget(int id, locationDto location)
+        public async Task PinTargetAsync(int id, locationDto location)
         {
             TargetModel? target = await _DbContext.Targets.FindAsync(id);
             if (target == null)
                 throw new Exception("Not Found");
-            if (target.Status == TargetModel.TargetStatus.dead)
-                return false;
-            if (target.XWaypoint == 201 || target.YWaypoint == 201)
+            if (target.Status == TargetStatus.dead)
+                throw new Exception("Is Ded");
+            try
             {
                 target.XWaypoint = location.x;
                 target.YWaypoint = location.y;
-                await _DbContext.SaveChangesAsync();
-                return true;
+                if(!AgentTargetUtils.IsLocationValid(target.XWaypoint, target.YWaypoint))
+                    throw new Exception("InValid Location");
             }
-            return false;
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            await _DbContext.SaveChangesAsync();
         }
-        public async Task<bool> MoveTarget(int id, DirectionDto directionDto)
+    
+        public async Task MoveTargetAsync(int id, DirectionDto directionDto)
         {
             var numDirection = directionDto.NumDirection[directionDto.direction];
             TargetModel? target = await _DbContext.Targets.FindAsync(id);
             if (target == null)
                 throw new Exception("Not Found");
-            if (target.Status != TargetModel.TargetStatus.live)
-                throw new Exception("Target is ded");
-            if (target.XWaypoint == -201 || target.YWaypoint == -201)
-                throw new Exception("Not Pozition yet");
-            target.XWaypoint += numDirection.Value.x;
-            target.YWaypoint += numDirection.Value.y;
-            if (IsLocationValid(target.XWaypoint, target.YWaypoint))
+            //if (target.Status != TargetModel.TargetStatus.live)
+            //throw new Exception("Target is ded");
+            try
             {
+                AgentTargetUtils.MuveTargetStep(target, numDirection.Value.x, numDirection.Value.y);
                 await _DbContext.SaveChangesAsync();
-                return true;
             }
-            throw new Exception("InValidLocation");
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
-        public async Task<List<MissionModel>?> GetOffersBiAgentId(int id) =>
-                await _DbContext.Missions.Where(x => x.AgentId == id)
-               .Where(x => x.MissionStatus == MissionStatus.offer).ToListAsync();
 
-
-        public bool IsLocationValid(int x, int y) =>
-            x >= 0 && x < 1000 && y >= 0 && y < 1000;
-
-
-
+        public async Task<TargetModel> GetTargetById(int id)
+        {
+            return await _DbContext.Targets.FindAsync(id);
+        }
     }
 }
 
-
-/*
-        public bool IsInKillZone(AgentModel agent, TargetModel target)
-        {
-            return Math.Sqrt(Math.Pow(agent.XWaypoint - target.XWaypoint, 2)
-                + Math.Pow(agent.YWaypoint - target.YWaypoint, 2)) <= 200;
-
-        }
-
-
-
-*/

@@ -39,7 +39,8 @@ namespace MosadRest.Migrations
                     PhotoUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     XWaypoint = table.Column<int>(type: "int", nullable: false),
                     YWaypoint = table.Column<int>(type: "int", nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsHunted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -54,10 +55,10 @@ namespace MosadRest.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AgentId = table.Column<int>(type: "int", nullable: false),
                     TargetId = table.Column<int>(type: "int", nullable: false),
-                    TimeLeft = table.Column<float>(type: "real", nullable: false),
-                    TotalExecutionTime = table.Column<float>(type: "real", nullable: true),
+                    TimeLeft = table.Column<double>(type: "float", nullable: false),
+                    TotalExecutionTime = table.Column<double>(type: "float", nullable: true),
                     MissionStatus = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    _starTtime = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    _StartTime = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {

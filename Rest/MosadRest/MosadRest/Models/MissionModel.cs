@@ -14,11 +14,11 @@ namespace MosadRest.Models
         public required int TargetId { get; set; }
         public TargetModel Target { get; set; }
         [Required]
-        public required float TimeLeft { get; set; }
-        public float? TotalExecutionTime { get; set; }
+        public required double TimeLeft { get; set; }
+        public double? TotalExecutionTime { get; set; }
         [Required]
         public required MissionStatus MissionStatus { get; set; } = MissionStatus.offer;
-        public DateTime _starTtime { get; set; }
+        public DateTime _StartTime { get; set; }
     }
 }
 

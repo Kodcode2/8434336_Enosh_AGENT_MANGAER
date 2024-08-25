@@ -2,6 +2,7 @@
 using MosadRest.Data;
 using MosadRest.DtoModels;
 using MosadRest.Models;
+using MosadRest.Utils;
 using System.Reflection;
 
 namespace MosadRest.Services
@@ -13,7 +14,7 @@ namespace MosadRest.Services
             AgentModel newAgent = new()
             {
                 NickName = agentDto.nickname,
-                PhotoUrl = agentDto.photo_url
+                PhotoUrl = agentDto.photoUrl
             };
             await _DbContext.AddAsync(newAgent);
             await _DbContext.SaveChangesAsync();
@@ -26,64 +27,50 @@ namespace MosadRest.Services
         {
             return  await _DbContext.Agents.ToListAsync() ?? new();
         }  
-        public async Task<bool> PinAgentAsync (int id, locationDto location)
+        public async Task PinAgentAsync (AgentModel agent, locationDto location)
         {
-            AgentModel? agent = await _DbContext.Agents.FindAsync(id);
-            if (agent == null)
-                throw new Exception("Not Found");
-            if (agent.XWaypoint == -201 || agent.YWaypoint == -201)
+            try
             {
                 agent.XWaypoint = location.x;
                 agent.YWaypoint = location.y;
-                if (!IsLocationValid(agent.XWaypoint, agent.YWaypoint))
-                    throw new Exception("InValid Location");
-                await _DbContext.SaveChangesAsync();
-                return true;
+                if (!AgentTargetUtils.IsLocationValid(agent.XWaypoint, agent.YWaypoint))
+                    throw new Exception("InValid Location");                       
             }
-            return false;
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            await _DbContext.SaveChangesAsync();
         }       
-        public async Task<bool> MoveAgentAsync(AgentModel agent, DirectionDto directionDto)
+        public async Task MoveAgentAsync(AgentModel agent, DirectionDto directionDto)
         {
             var numDirection = directionDto.NumDirection[directionDto.direction];
-            agent.XWaypoint += numDirection.Value.x;
-            agent.YWaypoint += numDirection.Value.y;
-            if (IsLocationValid(agent.XWaypoint, agent.YWaypoint))
+            try
             {
+                AgentTargetUtils.MuveAgentStep(agent, 
+                    numDirection.Value.x, numDirection.Value.y);
                 await _DbContext.SaveChangesAsync();
-                return true;
             }
-            throw new Exception("InValid Location");
-        }
-        public bool IsLocationValid(int x, int y) =>
-             x >= 0 && x < 1000 && y >= 0 && y < 1000;
-        public async Task<List<MissionModel>?> ChkAndCreateMissins(AgentModel agent)
-        {
-            List<MissionModel>? missions = await GetOffersByAgentId(agent.Id);
-            if (missions != null)
+            catch (Exception ex)
             {
-                //missions = await missions.Where(async x => IsInKillZone(agent, 
-                    //await _DbContext.Targets.FindAsync(x.TargetId))).ToListAsync();
+                throw new Exception(ex.Message);
             }
-
-
-
-
-
-            return new List<MissionModel>();
         }
-        public async Task<List<MissionModel>?> GetOffersByAgentId(int id) =>
-                 await _DbContext.Missions.Where(x => x.AgentId == id)
-                .Where(x => x.MissionStatus == MissionStatus.offer).ToListAsync();
-        public bool IsInKillZone(AgentModel agent, TargetModel target)
-        {
-            return Math.Sqrt(Math.Pow(agent.XWaypoint - target.XWaypoint, 2)
-                + Math.Pow(agent.YWaypoint - target.YWaypoint, 2)) <= 200;
-        }
+       
         public bool IsAgentActive(AgentModel agent)
             => agent.Status == AgentStatus.Active;
         public async Task<AgentModel?> GetAgentByIdAsync(int id)
         {
-            return await _DbContext.Agents.FindAsync(id);
+            return await _DbContext.Agents.FindAsync(id) ?? 
+                throw new Exception ("Not found");
+        }
+
+        public void AgentAtakToKil(AgentModel agent, TargetModel target)
+        {
+            if (agent.XWaypoint != target.XWaypoint)
+                agent.XWaypoint = agent.XWaypoint > target.XWaypoint ? agent.XWaypoint++ : agent.XWaypoint--;
+            if (agent.YWaypoint != target.YWaypoint)
+                agent.YWaypoint = agent.YWaypoint > target.YWaypoint ? agent.YWaypoint++ : agent.YWaypoint--;
         }
     }
 }
