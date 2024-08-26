@@ -18,9 +18,9 @@ namespace MosadRest
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddHttpClient(); builder.Services.AddDbContext<ApplicationDbContext>(options
-                    => options.UseSqlServer(
+                    =>  options.UseSqlServer(
                     builder.Configuration.GetConnectionString("DefaulCnnetion")
-                    )
+                    ), ServiceLifetime.Scoped
                 );
             builder.Services.AddScoped<IAgentService, AgentService>();
             builder.Services.AddScoped<ITargetService, TargetService>();

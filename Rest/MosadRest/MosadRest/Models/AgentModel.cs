@@ -15,7 +15,6 @@ namespace MosadRest.Models
         public  int  YWaypoint { get; set; } = -201;
         [Required]
         public  AgentStatus Status { get; set; } = AgentStatus.InActive;
-        public List<MissionModel> Missions { get; set; } = [];
 
 
     }

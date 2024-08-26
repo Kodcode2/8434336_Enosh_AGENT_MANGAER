@@ -68,9 +68,10 @@ namespace MosadRest.Services
         public void AgentAtakToKil(AgentModel agent, TargetModel target)
         {
             if (agent.XWaypoint != target.XWaypoint)
-                agent.XWaypoint = agent.XWaypoint > target.XWaypoint ? agent.XWaypoint++ : agent.XWaypoint--;
+                agent.XWaypoint = agent.XWaypoint < target.XWaypoint ? agent.XWaypoint + 1 : agent.XWaypoint - 1;
             if (agent.YWaypoint != target.YWaypoint)
-                agent.YWaypoint = agent.YWaypoint > target.YWaypoint ? agent.YWaypoint++ : agent.YWaypoint--;
+                agent.YWaypoint = agent.YWaypoint < target.YWaypoint ? agent.YWaypoint + 1 : agent.YWaypoint - 1;
+
         }
     }
 }

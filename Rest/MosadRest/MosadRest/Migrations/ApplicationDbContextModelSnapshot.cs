@@ -130,13 +130,13 @@ namespace MosadRest.Migrations
             modelBuilder.Entity("MosadRest.Models.MissionModel", b =>
                 {
                     b.HasOne("MosadRest.Models.AgentModel", "Agent")
-                        .WithMany("Missions")
+                        .WithMany()
                         .HasForeignKey("AgentId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("MosadRest.Models.TargetModel", "Target")
-                        .WithMany("Missions")
+                        .WithMany()
                         .HasForeignKey("TargetId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -144,16 +144,6 @@ namespace MosadRest.Migrations
                     b.Navigation("Agent");
 
                     b.Navigation("Target");
-                });
-
-            modelBuilder.Entity("MosadRest.Models.AgentModel", b =>
-                {
-                    b.Navigation("Missions");
-                });
-
-            modelBuilder.Entity("MosadRest.Models.TargetModel", b =>
-                {
-                    b.Navigation("Missions");
                 });
 #pragma warning restore 612, 618
         }

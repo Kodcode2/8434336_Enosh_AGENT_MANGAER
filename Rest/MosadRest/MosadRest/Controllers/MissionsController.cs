@@ -5,24 +5,26 @@ using MosadRest.Services;
 
 namespace MosadRest.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("/[controller]")]
     [ApiController]
     public class MissionsController(IMissionService missionService) : ControllerBase
     {
+
         [HttpGet]
         public async Task<ActionResult> GetMissions()
         {
-            return Ok(await missionService.GetAllMisionsasync());
+            var res = await missionService.GetAllMisionsasync();
+            return Ok(res);
         }
 
-        [HttpPost("/update")]
+        [HttpPost("update")]
         public async Task<ActionResult> UpdateMission()
         {
             await missionService.UpdteMission();
             return Ok();
         }
 
-        [HttpPut("/{id}")]
+        [HttpPut("{id}")]
         public async Task<ActionResult> MissionAssigned(int id)
         {
             try
@@ -35,6 +37,17 @@ namespace MosadRest.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpGet("details/{id}")]
+        public ActionResult GetDetails(int id)
+        {
+                var res = missionService.GetDetailsById(id);
+            if (res != null)
+                return Ok(res);
+            return NotFound("This Mission Dasnot Exsist");
+            
+            
+        }
     }
+
 }
 //“status”:““status”:“assigned””

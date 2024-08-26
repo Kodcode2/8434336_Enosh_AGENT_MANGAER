@@ -28,13 +28,13 @@ namespace MosadRest.Data
 
             modelBuilder.Entity<MissionModel>()
                 .HasOne(m => m.Agent)
-                .WithMany(a => a.Missions)
+                .WithMany()
                 .HasForeignKey(m => m.AgentId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<MissionModel>()
                 .HasOne(m => m.Target)
-                .WithMany(a => a.Missions)
+                .WithMany()
                 .HasForeignKey(m => m.TargetId)
                 .OnDelete(DeleteBehavior.Restrict);
 

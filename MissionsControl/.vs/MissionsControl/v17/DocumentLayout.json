@@ -1,0 +1,213 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\services\\missionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\services\\missionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\dtomodels\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\dtomodels\\targetdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\dtomodels\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\dtomodels\\agentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\controllers\\missionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\services\\imissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\services\\imissionsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\views\\missions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\views\\missions\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\dtomodels\\missionfulldetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\dtomodels\\missionfulldetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\views\\missions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\views\\missions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\viewmodels\\missionfulldetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\viewmodels\\missionfulldetailsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\views\\missions\\deteils.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\views\\missions\\deteils.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\models\\missiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\models\\missiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|c:\\users\\codco\\desktop\\agents\\missionscontrol\\missionscontrol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D810BE8-C125-49C6-8E6A-4CD11528616E}|MissionsControl\\MissionsControl.csproj|solutionrelative:missionscontrol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Views\\Missions\\Details.cshtml",
+              "RelativeDocumentMoniker": "MissionsControl\\Views\\Missions\\Details.cshtml",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Views\\Missions\\Details.cshtml",
+              "RelativeToolTip": "MissionsControl\\Views\\Missions\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T14:56:24.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Views\\Missions\\Index.cshtml",
+              "RelativeDocumentMoniker": "MissionsControl\\Views\\Missions\\Index.cshtml",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Views\\Missions\\Index.cshtml",
+              "RelativeToolTip": "MissionsControl\\Views\\Missions\\Index.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAEAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T10:55:16.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TargetDto.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\DtoModels\\TargetDto.cs",
+              "RelativeDocumentMoniker": "MissionsControl\\DtoModels\\TargetDto.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\DtoModels\\TargetDto.cs",
+              "RelativeToolTip": "MissionsControl\\DtoModels\\TargetDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:35:34.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MissionDto.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Models\\MissionDto.cs",
+              "RelativeDocumentMoniker": "MissionsControl\\Models\\MissionDto.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Models\\MissionDto.cs",
+              "RelativeToolTip": "MissionsControl\\Models\\MissionDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:33:54.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AgentDto.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\DtoModels\\AgentDto.cs",
+              "RelativeDocumentMoniker": "MissionsControl\\DtoModels\\AgentDto.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\DtoModels\\AgentDto.cs",
+              "RelativeToolTip": "MissionsControl\\DtoModels\\AgentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:32:07.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MissionFullDetailsVm.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\ViewModels\\MissionFullDetailsVm.cs",
+              "RelativeDocumentMoniker": "MissionsControl\\ViewModels\\MissionFullDetailsVm.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\ViewModels\\MissionFullDetailsVm.cs",
+              "RelativeToolTip": "MissionsControl\\ViewModels\\MissionFullDetailsVm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:30:33.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MissionFullDetailsDto.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\DtoModels\\MissionFullDetailsDto.cs",
+              "RelativeDocumentMoniker": "MissionsControl\\DtoModels\\MissionFullDetailsDto.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\DtoModels\\MissionFullDetailsDto.cs",
+              "RelativeToolTip": "MissionsControl\\DtoModels\\MissionFullDetailsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:17:07.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MissionsService.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Services\\MissionsService.cs",
+              "RelativeDocumentMoniker": "MissionsControl\\Services\\MissionsService.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Services\\MissionsService.cs",
+              "RelativeToolTip": "MissionsControl\\Services\\MissionsService.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwB8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:09:19.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IMissionsService.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Services\\IMissionsService.cs",
+              "RelativeDocumentMoniker": "MissionsControl\\Services\\IMissionsService.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Services\\IMissionsService.cs",
+              "RelativeToolTip": "MissionsControl\\Services\\IMissionsService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:09:03.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Program.cs",
+              "RelativeDocumentMoniker": "MissionsControl\\Program.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Program.cs",
+              "RelativeToolTip": "MissionsControl\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:08:24.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MissionsController.cs",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Controllers\\MissionsController.cs",
+              "RelativeDocumentMoniker": "MissionsControl\\Controllers\\MissionsController.cs",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Controllers\\MissionsController.cs",
+              "RelativeToolTip": "MissionsControl\\Controllers\\MissionsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-26T08:08:15.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Deteils.cshtml",
+              "DocumentMoniker": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Views\\Missions\\Deteils.cshtml",
+              "RelativeDocumentMoniker": "MissionsControl\\Views\\Missions\\Deteils.cshtml",
+              "ToolTip": "C:\\Users\\codco\\Desktop\\Agents\\MissionsControl\\MissionsControl\\Views\\Missions\\Deteils.cshtml",
+              "RelativeToolTip": "MissionsControl\\Views\\Missions\\Deteils.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T14:51:15.587Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
