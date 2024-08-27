@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MosadRest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28f3637ba9fe8be8615d2421120029527c45778b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c08601b3c99ba26d28f924e81866138e60171c1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MosadRest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MosadRest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

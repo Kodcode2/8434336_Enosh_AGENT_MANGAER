@@ -47,6 +47,14 @@ namespace MosadRest.Controllers
             
             
         }
+        [HttpGet("details")]
+        public ActionResult GetAllDetails()
+        {
+            var res = missionService.GetAllDetails();
+            if (res != null)
+                return Ok(res);
+            return NotFound("This Mission Dasnot Exsist");
+        }
     }
 
 }

@@ -16,7 +16,7 @@ namespace MosadRest.Services
         public Task UpdteMission();
         public Task AssimntMission(int id);
         public MissionModel GetDetailsById(int id);
-
+        public List<MissionModel> GetAllDetails();
 
 
 

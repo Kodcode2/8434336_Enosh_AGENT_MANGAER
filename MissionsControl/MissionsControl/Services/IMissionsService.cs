@@ -8,7 +8,9 @@ namespace MissionsControl.Services
     {
         public Task<List<MissionDto>?> GetAllMissionsAsync();
         public Task<MissionFullDetailsVm> GetMissionDetailsById(int id);
-            
+        public Task<List<MissionFullDetailsDto>> GetAllMissionsFullAsync();
+
+
 
 
     }

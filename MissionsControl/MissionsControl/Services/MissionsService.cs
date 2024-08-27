@@ -52,7 +52,22 @@ namespace MissionsControl.Services
             }
             return null;
         }
+        public async Task<List<MissionFullDetailsDto>> GetAllMissionsFullAsync()
+        {
+            var httpClient = clientFactory.CreateClient();
+            var request = new HttpRequestMessage(HttpMethod.Get, $"{_url}/details");
+            var res = await httpClient.SendAsync(request);
+            if (res.IsSuccessStatusCode)
+            {
+                var content = await res.Content.ReadAsStringAsync();
+                List<MissionFullDetailsDto?> missions = JsonSerializer.Deserialize<List<MissionFullDetailsDto>>(
+                    content, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
+                return missions ?? new();
+            }
+            return null;
+        }
     }
+    
 }
 /*
 details

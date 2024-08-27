@@ -210,5 +210,14 @@ namespace MosadRest.Services
             return mission ?? null;
 
         }
+
+        public List<MissionModel> GetAllDetails()
+        {
+            var missions =  _DbContext.Missions
+                .Include(m => m.Agent)
+                .Include(m => m.Target)
+                .ToList();
+            return missions ?? null;
+        }
     }
 }
